@@ -1,0 +1,13 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: labelpod2
+  labels:
+    app: myapp1
+    env: gamma
+spec:
+  containers:
+    - name: c1
+      image: nginx
+      command: ["/bin/bash", "-c","while true; do echo Hello-sai; sleep 5; done"]
+
