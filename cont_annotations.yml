@@ -1,0 +1,10 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: testpod
+  annotations:
+    description: our first pod created for annotations
+spec:
+  containers:
+    - name: c1
+      image: ubuntu

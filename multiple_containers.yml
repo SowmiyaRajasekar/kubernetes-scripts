@@ -1,0 +1,13 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: testpod1
+spec:
+  containers:
+    - name: c1
+      image: nginx
+      command: ["/bin/bash", "-c","while true; do echo Hello-sai; sleep 5; done"]
+    - name: c2
+      image: httpd
+      command: ["/bin/bash", "-c","while true; do echo Hello-hari; sleep 5; done"]
+
