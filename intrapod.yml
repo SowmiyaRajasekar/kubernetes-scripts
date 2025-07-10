@@ -1,0 +1,13 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: myintrapod
+spec:
+  containers:
+    - name: web-containers
+      image: ubuntu
+      command: ["/bin/bash", "-c","while true; do echo Hello-sai; sleep 5; done"]
+    - name: web-container2
+      image: httpd
+      ports:
+        - containerPort: 80

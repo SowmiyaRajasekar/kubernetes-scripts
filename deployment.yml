@@ -1,0 +1,19 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: mydeployments
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: regapp
+  template:
+    metadata:
+      labels:
+        app: regapp
+    spec:
+      containers:
+          - name: c1
+            image: ubuntu
+            command: ["/bin/bash", "-c","while true; do echo Hell-hari; sleep 5; done"]
+

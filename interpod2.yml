@@ -1,0 +1,11 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: myinterpod2
+spec:
+  containers:
+    - name: c1
+      image: httpd
+      ports:
+        - containerPort: 80
+

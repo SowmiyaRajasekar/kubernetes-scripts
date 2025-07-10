@@ -1,0 +1,10 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: myinterpod1
+spec:
+  containers:
+    - name: c1
+      image: nginx
+      ports:
+        - containerPort: 80
